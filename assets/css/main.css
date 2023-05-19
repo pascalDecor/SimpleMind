@@ -1,0 +1,99 @@
+/* Globale */
+
+
+body {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+}
+
+/* Font */
+
+* {
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.font-title {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.p1 {
+    font-size: 25px;
+}
+
+.p2 {
+    font-size: 20px;
+}
+
+.p3 {
+    font-size: 15px;
+}
+
+.text-blue {
+    color: #0a0d65 !important;
+}
+
+.bg-blue {
+    background-color: #0a0d65 !important;
+    color: white;
+}
+
+.text-yellow {
+    color: #d8a61f !important;
+}
+
+.bg-yellow {
+    background-color: #d8a61f !important;
+    color: white;
+}
+
+/*  */
+
+img.logo {
+    width: 80px;
+    aspect-ratio: 1;
+}
+
+.banner {
+    height: 80vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a0d6528;
+    background-image: url('../images/banner-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    background-blend-mode: difference;
+}
+/* .banner {
+    background-image: url('../images/banner-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+} */
+
+.banner h1,
+.banner h1 * {
+    font-size: 50px;
+}
