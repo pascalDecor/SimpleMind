@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
     <title>SIMPLE MIND</title>
+    <!--  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +20,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- Style -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <style>
@@ -27,7 +31,7 @@
 
 <body class="container-fluid py-0 px-0 m-0">
     <!-- Nav bar -->
-    <nav class="position-fixed  py-2 px-5 container-fluid m-0">
+    <nav id="navBar" class="position-fixed  py-2 px-5 container-fluid m-0" style="z-index:1000">
         <dv class="d-flex justify-content-between align-items-center ">
             <div class="logo">
                 <img src="assets/images/logoBlueBlanc.png" alt="" class="logo rounded-5">
@@ -43,10 +47,10 @@
                     <a class="nav-link text-dark" href="#">Nos produits</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">Contact</a>
+                    <a href="" class="btn bg-blue py-2 px-4 rounded-4 me-2 ">Contactez nous</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="btn bg-blue py-2 px-4 rounded-4">Contactez nous</a>
+                    <a href="" class="btn bg-yellow py-2 px-4 rounded-4">Nous Rejoindre</a>
                 </li>
             </ul>
         </dv>
@@ -59,23 +63,59 @@
     <section class="banner">
         <div class="p-5 container-fluid img">
             <div class="row align-items-center justify-content-center px-0 mx-0   mx-auto">
-                <div class="col-4 px-0">
-                    <h1 class="text-blue text-uppercase fw-bold mb-4">
-                        Découvrez tous sur Simple Mind <span class="text-yellow h1 fw-bold"> UI/UX DESIGN</span>
+                <div class="col-5 px-0">
+                    <!--  -->
+                    <h1 class="text-blue text-uppercase fw-bold mb-4" data-aos="fade-up">
+                        Chez SIMPLE MIND, nous sommes des <span class="text-yellow h1 fw-bold"> passionnés de la
+                            création digitale</span>
                     </h1>
-                    <p class="text-blue p2 fw-lighter">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam velit cum vel architecto aut
-                        harum et
-                        quae similique, vero odit eveniet? Eos maiores totam iure officia voluptatum labore quis rem.
+                    <p class="text-blue p2 fw-lighter" data-aos="fade-up" data-aos-delay="300">
+                        Bienvenue sur notre site web dédié aux services de création digitale pour votre entreprise. Nous
+                        sommes spécialisés dans la création de sites web, d'applications mobiles et de design graphique
+                        pour des marques de toutes tailles et de tous secteurs. Nous sommes une équipe passionnée et
+                        dédiée, offrant des solutions créatives et innovantes pour aider nos clients à atteindre leurs
+                        objectifs commerciaux.
                     </p>
+                    <!--  -->
                     <div class="d-flex">
-                        <a href="" class="btn bg-blue py-3 px-5 mt-3 rounded-4 me-2">Contactez nous</a>
-                        <a href="" class="btn text-blue fw-medium bg-yellow py-3 px-5 mt-3 rounded-4">Rejoindre la
+                        <a href="" class="btn bg-blue py-3 px-5 mt-3 rounded-4 me-2" data-aos="fade-up"
+                            data-aos-delay="600">Contactez nous</a>
+                        <a href="" class="btn text-blue fw-medium bg-yellow py-3 px-5 mt-3 rounded-4" data-aos="fade-up"
+                            data-aos-delay="800">Rejoindre la
                             communauté</a>
                     </div>
+                    <!--  -->
+                    <div class="d-flex align-items-center mt-5">
+                        <div class="" data-aos="zoom-in" data-aos-delay="900">
+                            <img src="https://th.bing.com/th/id/OIP.liRgQvpdkxNGbC7CfJFl2QHaIr?w=168&h=197&c=7&r=0&o=5&pid=1.7"
+                                style="width:55px;aspect-ratio: 1;" class="rounded-5  border-white border-3 shadow-sm">
+                        </div>
+                        <div class="" data-aos="zoom-in" data-aos-delay="1000">
+                            <img src="https://th.bing.com/th/id/OIP.LmrBmNyaBJo8Q81cBXb-WAHaHT?w=166&h=180&c=7&r=0&o=5&pid=1.7"
+                                style="width:55px;aspect-ratio: 1;" class="rounded-5  border-white border-3 shadow-sm">
+                        </div>
+                        <div class="" data-aos="zoom-in" data-aos-delay="1100">
+                            <img src="https://th.bing.com/th?q=Twist+Homme+Noir&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-WW&cc=TG&setlang=fr&adlt=moderate&t=1&mw=247"
+                                style="width:55px;aspect-ratio: 1;" class="rounded-5  border-white border-3 shadow-sm">
+                        </div>
+                        <div class="" data-aos="zoom-in" data-aos-delay="1200">
+                            <img src="https://th.bing.com/th/id/OIP.3aOV901LcsWKz59WtTcH7QAAAA?w=197&h=253&c=7&r=0&o=5&pid=1.7"
+                                style="width:55px;aspect-ratio: 1;" class="rounded-5  border-white border-3 shadow-sm">
+                        </div>
+                        <div class="" data-aos="zoom-in" data-aos-delay="1300">
+                            <img src="https://th.bing.com/th/id/OIP.-JMMTksHupdrXAAW-imAfgAAAA?w=197&h=234&c=7&r=0&o=5&pid=1.7"
+                                style="width:55px;aspect-ratio: 1;" class="rounded-5  border-white border-3 shadow-sm">
+                        </div>
+                        <div class="mt-3 ms-3">
+                            <p class="p2 text-yellow fw-bold" data-aos="fade-right" data-aos-delay="1450">+ 100K
+                                Abonnées</p>
+                        </div>
+                    </div>
+                    <!--  -->
                 </div>
-                <div class="col-5">
-                    <img src="assets/images/discord-placeholder.svg" alt="" class="img-fluid ">
+                <div class="col-6">
+                    <img src="assets/images/design.png" alt="" class="img-fluid" data-aos="zoom-in" data-aos-delay="700"
+                        data-aos-duration="500">
                 </div>
             </div>
         </div>
@@ -84,19 +124,466 @@
     <!-- End Section Banner -->
 
     <!-- Section services -->
-    <section class="container-fluid p-5 m-0">
-        <div class="container text-center">
-            <h1 class="text-blue text-uppercase fw-bold mb-2 mt-3">
-                Découvrez  <span class="text-yellow h1 fw-bold">nos services</span>
+    <section class="container-fluid p-5 m-0 position-relative">
+        <div class="posionned-div-1" style="z-index: 1;"></div>
+        <div class=" text-center position-relative" style="z-index: 2;">
+            <h1 class="text-blue text-uppercase fw-bold mb-2 mt-3" data-aos="fade-up">
+                Découvrez <span class="text-yellow h1 fw-bold">nos services</span>
             </h1>
-            <p class="text-blue p2 fw-lighter">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam velit cum vel architecto aut
-            </p>
+            <div class="container">
+                <p class="text-blue p2 fw-lighter" data-aos="fade-up" data-aos-delay="300">
+                    Découvrez nos services exceptionnels. Avec notre expertise et notre engagement envers la
+                    satisfaction client, nous vous proposons une gamme complète de solutions adaptées à vos besoins
+                </p>
+            </div>
+            <div class="row my-5 owl-carousel owl-theme">
+                <!--  -->
+                <div class="col px-2">
+                    <div class="bg-white-transparent px-4 py-4 border border-2 rounded-4 text-start h-100">
+                        <div>
+                            <img style="height:70px;width: 70px;" src="assets/images/ui-Design.png" alt="">
+                        </div>
+                        <h5 class="text-blue fw-bold mt-3 mb-2">
+                            Design d' <span class="text-yellow h5 fw-bold"> interface </span> et <span
+                                class="text-yellow h5 fw-bold"> expérience </span> utilisateur
+                        </h5>
+                        <p class="text-blue p3 fw-lighter">
+                            création d'interfaces utilisateur attrayantes et efficaces
+                        </p>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col px-2">
+                    <div class="bg-white-transparent px-4 py-4 border border-2 rounded-4 text-start h-100">
+                        <div>
+                            <img style="height:70px;width: 70px;" src="assets/images/web-developpement.png" alt="">
+                        </div>
+                        <h5 class="text-blue  fw-bold mt-3 mb-2">
+                            Développement <span class="text-yellow h5 fw-bold">Web</span>, <span
+                                class="text-yellow h5 fw-bold">Mobile</span> et <span class="text-yellow h5 fw-bold">
+                                Dekstop </span>
+                        </h5>
+                        <p class="text-blue p3 fw-lighter">
+                            des sites web et applications professionnels et personnalisés
+                        </p>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col px-2 h-100">
+                    <div class="bg-white-transparent px-4 py-4 border border-2 rounded-4 text-start h-100">
+                        <div>
+                            <img style="height:70px;width: 70px;" src="assets/images/graphisme.png" alt="">
+                        </div>
+                        <h5 class="text-blue  fw-bold mt-3 mb-2">
+                            <span class="text-yellow h5 fw-bold"> Graphisme </span> & infographie
+                        </h5>
+                        <p class="text-blue p3 fw-lighter">
+                            création de designs créatifs et impactants pour votre entreprise
+                        </p>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col px-2 h-100">
+                    <div class="bg-white-transparent px-4 py-4 border border-2 rounded-4 text-start h-100">
+                        <div>
+                            <img style="height:70px;width: 70px;" src="assets/images/3d-modeling.png" alt="">
+                        </div>
+                        <h5 class="text-blue  fw-bold mt-3 mb-2">
+                            Conception <span class="text-yellow h5 fw-bold"> 3D </span>
+                        </h5>
+                        <p class="text-blue p3 fw-lighter">
+                            des modèles 3D de haute qualité pour nos clients
+                        </p>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col px-2 h-100">
+                    <div class="bg-white-transparent px-4 py-4 border border-2 rounded-4 text-start h-100">
+                        <div>
+                            <img style="height:70px;width: 70px;" src="assets/images/social-media.png" alt="">
+                        </div>
+                        <h5 class="text-blue  fw-bold mt-3 mb-2">
+                            <span class="text-yellow h5 fw-bold"> Communication </span> digitale
+                        </h5>
+                        <p class="text-blue p3 fw-lighter">
+                            votre allié pour atteindre une présence en ligne percutante
+                        </p>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col px-2 h-100">
+                    <div class="bg-white-transparent px-4 py-4 border border-2 rounded-4 text-start h-100">
+                        <div>
+                            <img style="height:70px;width: 70px;" src="assets/images/market-research.png" alt="">
+                        </div>
+                        <h5 class="text-blue  fw-bold mt-3 mb-2">
+                            <span class="text-yellow h5 fw-bold"> Marketing </span> digitale
+                        </h5>
+                        <p class="text-blue p3 fw-lighter">
+                            votre partenaire pour propulser votre entreprise vers de nouveaux horizons
+                        </p>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+            <!--  -->
+            <a href="" class="btn bg-blue py-3 px-5 rounded-4 me-2 mx-auto" data-aos="flip-up"
+                data-aos-delay="500">Contactez nous</a>
+            <!--  -->
         </div>
     </section>
     <!-- End Section services -->
 
-    <script src="" async defer></script>
+    <!-- Section design -->
+    <section class="position-relative" style="z-index: 2;">
+        <div class="row mb-5 pb-5 justify-content-center mx-auto">
+            <div class="col-5">
+                <img src="assets/images/designUI.png" alt="" class="image-fluid container-fluid my-auto"
+                    data-aos="flip-left" data-aos-delay="1000" data-aos-duration="1000">
+            </div>
+            <div class="col-5 my-auto">
+                <div class="my-auto">
+                    <!--  -->
+                    <h1 class="text-blue text-uppercase fw-bold mb-4" data-aos="fade-up" data-aos-delay="500">
+                        Créez des expériences utilisateur exceptionnelles avec notre équipe de <span
+                            class="text-yellow h1 fw-bold"> conception UI/UX </span>
+                    </h1>
+                    <p class="text-blue p2 fw-lighter" data-aos="fade-up" data-aos-delay="700">
+                        Notre équipe est spécialisée dans la création d'interfaces utilisateur attrayantes et efficaces.
+                        Nous mettons l'accent sur l'expérience utilisateur pour offrir à vos clients une expérience
+                        agréable et mémorable avec votre entreprise. Grâce à une combinaison de conception esthétique,
+                        de convivialité et de recherche approfondie, nous créons des interfaces qui captivent, guident
+                        et engagent les utilisateurs, renforçant ainsi votre image de marque et favorisant la
+                        conversion. Faites confiance à notre expertise en UI/UX design pour donner vie à votre vision et
+                        offrir une expérience utilisateur exceptionnelle à chaque interaction.
+                    </p>
+                    <!--  -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section design -->
+    <!-- Section design -->
+    <section class="position-relative" style="z-index: 2;">
+        <div class="row mb-5 pb-5 justify-content-center mx-auto">
+            <div class="col-4 my-auto">
+                <div class="my-auto">
+                    <!--  -->
+                    <h1 class="text-blue text-uppercase fw-bold mb-4" data-aos="fade-right" data-aos-delay="1000">
+                        Transformez vos idées en réalité avec notre expertise en développement <span
+                            class="text-yellow h1 fw-bold">Web</span>, <span
+                            class="text-yellow h1 fw-bold">Mobile</span> et <span class="text-yellow h1 fw-bold">
+                            Dekstop </span>
+                    </h1>
+                    <p class="text-blue p2 fw-lighter" data-aos="fade-right" data-aos-delay="1200">
+                        Notre équipe dédiée au développement Web, Mobile et Desktop est prête à transformer vos idées en
+                        réalité. Nous sommes passionnés par la création d'applications et de sites Web innovants,
+                        fonctionnels et sur mesure, adaptés à vos besoins spécifiques. Que ce soit pour une application
+                        mobile intuitive, un site Web dynamique ou un logiciel de bureau puissant, nous combinons notre
+                        expertise technique avec une approche axée sur l'utilisateur pour offrir des solutions de
+                        développement robustes et performantes. Faites confiance à notre équipe expérimentée pour vous
+                        accompagner à chaque étape du processus, de la conception à la mise en œuvre, afin de créer des
+                        produits de qualité qui répondent aux attentes de vos utilisateurs et qui stimulent la
+                        croissance de votre entreprise.
+                    </p>
+                    <!--  -->
+                </div>
+            </div>
+            <div class="col-5 ps-5">
+                <img src="assets/images/devDesign.png" alt="" class="image-fluid container-fluid my-auto"
+                    data-aos-duration="1000" data-aos="flip-up" data-aos-delay="1500">
+            </div>
+
+        </div>
+    </section>
+    <!-- End Section design -->
+    <!-- Section design -->
+    <section class="position-relative" style="z-index: 2;">
+        <div class="posionned-div-2" style="z-index: 1;"></div>
+        <div class="row mb-5 pb-5 justify-content-center mx-auto">
+            <div class="col-5">
+                <img src="assets/images/graphismeDesign.png" alt="" class="image-fluid container-fluid my-auto"
+                    data-aos-duration="1000" data-aos="zoom-in" data-aos-delay="1500">
+            </div>
+            <div class="col-5 my-auto">
+                <div class="my-auto">
+                    <!--  -->
+                    <h1 class="text-blue text-uppercase fw-bold mb-4" data-aos="fade-up" data-aos-delay="500">
+                        Donnez vie à votre vision visuelle avec notre équipe créative de <span
+                            class="text-yellow h1 fw-bold"> graphistes </span> et d'<span
+                            class="text-yellow h1 fw-bold">infographistes</span>
+                    </h1>
+                    <p class="text-blue p2 fw-lighter" data-aos="fade-up" data-aos-delay="700">
+                        Notre équipe dédiée au graphisme et à l'infographie est prête à donner vie à vos idées
+                        visuelles. Que vous ayez besoin d'un logo percutant, d'une identité visuelle cohérente ou de
+                        supports de communication attrayants, nous mettons notre créativité et notre expertise à votre
+                        service. Nous comprenons l'importance de l'esthétique visuelle pour captiver votre public cible
+                        et transmettre efficacement votre message. Grâce à une combinaison de conception artistique, de
+                        choix de couleurs et de typographie judicieux, nous créons des visuels uniques et professionnels
+                        qui renforcent votre marque et suscitent l'engagement. Faites confiance à notre équipe
+                        passionnée pour donner vie à votre vision créative et faire ressortir votre entreprise dans un
+                        monde visuellement compétitif.
+
+                    </p>
+                    <!--  -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section design -->
+    <!-- Section design -->
+    <section class="position-relative" style="z-index: 2;">
+        <div class="row mb-5 pb-5 justify-content-center mx-auto">
+            <div class="col-4 my-auto">
+                <div class="my-auto">
+                    <!--  -->
+                    <h1 class="text-blue text-uppercase fw-bold mb-4" data-aos="fade-up" data-aos-delay="500">
+                        Maximisez votre impact en ligne grâce à notre expertise en <span
+                            class="text-yellow h1 fw-bold">communication digitale</span>
+                    </h1>
+                    <p class="text-blue p2 fw-lighter" data-aos="fade-up" data-aos-delay="700">
+                        Déployez une stratégie de communication digitale puissante et atteignez de nouveaux sommets.
+                        Notre équipe spécialisée en communication digitale vous accompagne pour maximiser votre présence
+                        en ligne, renforcer votre visibilité et engager votre audience. Des campagnes marketing ciblées
+                        aux stratégies de médias sociaux percutantes, nous mettons en œuvre des solutions personnalisées
+                        pour propulser votre marque sur le marché numérique. Faites confiance à notre expérience et à
+                        notre passion pour créer une connexion forte avec votre public et stimuler la croissance de
+                        votre entreprise dans l'univers digital en constante évolution.
+                    </p>
+                    <!--  -->
+                </div>
+            </div>
+            <div class="col-5 ps-5">
+                <img src="assets/images/communicationDigit.png" alt="" class="image-fluid container-fluid my-auto"
+                    data-aos-duration="1000" data-aos="flip-down" data-aos-delay="1500">
+            </div>
+
+        </div>
+    </section>
+    <!-- End Section design -->
+    <!-- Section design -->
+    <section class="position-relative" style="z-index: 2;">
+        <div class="posionned-div-3" style="z-index: 1;"></div>
+        <div class="row mb-5 pb-5 justify-content-center mx-auto">
+            <div class="col-5">
+                <img src="assets/images/marketingDigit.png" alt="" class="image-fluid container-fluid my-auto"
+                    data-aos-duration="1000" data-aos="fade-up" data-aos-delay="1500">
+            </div>
+            <div class="col-5 my-auto">
+                <div class="my-auto">
+                    <!--  -->
+                    <h1 class="text-blue text-uppercase fw-bold mb-4" data-aos="fade-up" data-aos-delay="500">
+                        Augmentez votre impact grâce à notre <span class="text-yellow h1 fw-bold"> expertise</span> en
+                        <span class="text-yellow h1 fw-bold"> marketing digital </span>
+                    </h1>
+                    <p class="text-blue p2 fw-lighter" data-aos="fade-up" data-aos-delay="700">
+                        Boostez votre présence en ligne et atteignez de nouveaux sommets avec notre service de marketing
+                        digital. Nous mettons à votre disposition notre savoir-faire en marketing numérique pour vous
+                        aider à générer du trafic qualifié, accroître votre visibilité et stimuler vos résultats
+                        commerciaux. De la création de stratégies personnalisées à la gestion de campagnes publicitaires
+                        efficaces, notre équipe passionnée vous accompagne dans chaque étape de votre parcours
+                        marketing. Grâce à notre approche axée sur les données et notre connaissance des dernières
+                        tendances, nous vous aidons à cibler votre audience, à engager vos clients et à construire une
+                        marque solide dans l'univers numérique en constante évolution. Faites confiance à notre
+                        expertise en marketing digital pour propulser votre entreprise vers de nouveaux horizons de
+                        succès.
+
+                    </p>
+                    <!--  -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section design -->
+    <footer>
+        <div class="container-fluid py-0 px-4 m-0 bg-blue text-white">
+            <div class="row p-5">
+                <div class="col-3">
+                    <div class="d-flex align-items-end mb-4">
+                        <img src="assets/images/logoTransparentBlanc.png" alt="" width="90" data-aos-duration="1000"
+                            data-aos="zoom-out" data-aos-delay="400">
+                        <h4 class="text-white text-uppercase fw-bold" data-aos="fade-right" data-aos-delay="600">
+                            SIMPLE <span class="text-yellow h4 fw-bold"> MIND</span>
+                        </h4>
+                    </div>
+                    <p style="text-align: justify;" data-aos="fade-up" data-aos-delay="800">
+                        Nous sommes une agence créative spécialisée dans la conception et la réalisation de projets
+                        digitaux innovants. Nous offrons une large gamme de services pour répondre aux besoins de nos
+                        clients, allant du design graphique à la création de sites web en passant par le développement
+                        d'applications mobiles et la conception d'interfaces utilisateur (UI/UX). Nous sommes passionnés
+                        par la création de solutions personnalisées pour chaque projet, en utilisant les dernières
+                        technologies pour offrir des résultats exceptionnels. Notre équipe de professionnels
+                        expérimentés est à votre disposition pour vous aider à donner vie à votre vision.
+                    </p>
+                </div>
+                <!--  -->
+                <div class="col-3 px-5">
+
+                    <h5 class="text-white text-uppercase fw-bold mb-5" data-aos="fade-up" data-aos-delay="500">
+                        LIEUX & <span class="text-yellow h5 fw-bold"> CONTACTS</span>
+                    </h5>
+                    <div class="d-flex mb-3"  data-aos="fade-up" data-aos-delay="700">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" Tiney="true">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                        <p class="ms-3">
+                            Lomé-TOGO .
+                            Surtout disponible sur les réseaux
+                        </p>
+                    </div>
+
+                    <div class="d-flex mb-3" data-aos="fade-up" data-aos-delay="900">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" Tiney="true">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <p class="ms-3">
+                            <a href="tel:+22892100162" class="text-white">+228 92100162</a> / <a href="tel:+22893955791"
+                                class="text-white"> 93955791</a>
+                        </p>
+                    </div>
+
+                    <div class="d-flex mb-5" data-aos="fade-up" data-aos-delay="1100">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" Tiney="true">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <p class="ms-3">
+                            <a href="mailto:pascalKoevi@gmail.com" class="text-white">pascalKoevi@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <div class="d-flex " data-aos="fade-up" data-aos-delay="1300">
+                        <a href="http://" class="text-white me-3">
+                            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"
+                                Tiney="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="http://" class="text-white me-3">
+                            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"
+                                Tiney="true">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="http://" class="text-white me-3">
+                            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12" Tiney="true"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+
+
+
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col-3 px-5">
+                    <h5 class="text-white text-uppercase fw-bold mb-5"  data-aos="fade-up" data-aos-delay="500">
+                        NOS <span class="text-yellow h5 fw-bold"> SERVICES</span>
+                    </h5>
+
+                    <a href="" class="text-white mb-4 d-block"  data-aos="fade-up" data-aos-delay="700"> Développement d'applications</a>
+                    <a href="" class="text-white mb-4 d-block"  data-aos="fade-up" data-aos-delay="900"> UI / UX Design</a>
+                    <a href="" class="text-white mb-4 d-block"  data-aos="fade-up" data-aos-delay="1100"> Graphisme & infographie</a>
+                    <a href="" class="text-white mb-4 d-block"  data-aos="fade-up" data-aos-delay="1300"> Modélisation 3D</a>
+
+                    <a href="" class="text-white mb-4 d-block"  data-aos="fade-up" data-aos-delay="1500"> Communication digitale</a>
+                    <a href="" class="text-white mb-4 d-block"  data-aos="fade-up" data-aos-delay="1700"> Marketing digitale</a>
+
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col-3 px-5">
+
+                    <h5 class="text-white text-uppercase fw-bold mb-5"  data-aos="fade-up" data-aos-delay="500">
+                        LIENS <span class="text-yellow h5 fw-bold"> UTILES</span>
+                    </h5>
+
+
+                    <a href="" class="text-white mb-4 d-block"  data-aos="fade-up" data-aos-delay="700"> Acceuil</a>
+                    <a href="" class="text-white mb-4 d-block"  data-aos="fade-up" data-aos-delay="900"> A propos de nous</a>
+                    <a href="" class="text-white mb-4 d-block"  data-aos="fade-up" data-aos-delay="1100"> Nos services</a>
+
+                    <a href="" class="text-white mb-4 d-block"  data-aos="fade-up" data-aos-delay="1300"> Nous contacter</a>
+                    <a href="" class="text-white mb-4 d-block"  data-aos="fade-up" data-aos-delay="1500"> Nous Rejoindre</a>
+
+
+                </div>
+                <!--  -->
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sélectionnez l'élément sur lequel vous souhaitez appliquer l'effet onscroll
+        var element = document.getElementById('navBar');
+
+        // Ajoutez un événement de défilement à la fenêtre
+        window.addEventListener('scroll', function () {
+            // Vérifiez la position de défilement de la fenêtre
+            var scrollPosition = window.scrollY || window.pageYOffset;
+
+            // Ajoutez ou supprimez une classe CSS en fonction de la position de défilement
+            if (scrollPosition > 200) {
+                // Ajoutez la classe lorsque vous atteignez une certaine position de défilement
+                element.classList.add('shadow-sm');
+                element.classList.add('bg-white');
+            } else {
+                // Supprimez la classe lorsque vous revenez en arrière
+                element.classList.remove('shadow-sm');
+                element.classList.remove('bg-white');
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
