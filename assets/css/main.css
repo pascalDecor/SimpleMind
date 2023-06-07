@@ -48,6 +48,8 @@ a {
     font-size: 15px;
 }
 
+
+
 .text-blue {
     color: #0a0d65 !important;
 }
@@ -74,7 +76,8 @@ img.logo {
 }
 
 .banner {
-    height: 95vh;
+    min-height: 95vh;
+    max-height: 150vh;
     width: 100vw;
     overflow-x: hidden;
     display: flex;
@@ -87,6 +90,7 @@ img.logo {
     background-position: bottom;
     background-blend-mode: difference;
 }
+
 /* .banner {
     background-image: url('../images/banner-bg.svg');
     background-repeat: no-repeat;
@@ -96,7 +100,7 @@ img.logo {
 
 .banner h1,
 .banner h1 * {
-    font-size:45px;
+    font-size: 45px;
 }
 
 .posionned-div-1 {
@@ -113,10 +117,10 @@ img.logo {
     filter: blur(80px);
     background: radial-gradient(circle at 50% 50%, #444af7b9, #444bf700);
     opacity: 0.5;
-  }
+}
 
 
-  .posionned-div-2 {
+.posionned-div-2 {
     position: absolute;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -130,8 +134,9 @@ img.logo {
     filter: blur(80px);
     background: radial-gradient(circle at 50% 50%, #f78c44b9, #d944f700);
     opacity: 0.7;
-  }
-  .posionned-div-3 {
+}
+
+.posionned-div-3 {
     position: absolute;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -145,23 +150,64 @@ img.logo {
     filter: blur(80px);
     background: radial-gradient(circle at 50% 50%, #f78c44b9, #d944f700);
     opacity: 0.7;
-  }
-  
-  .bg-white-transparent{
+}
+
+.bg-white-transparent {
     background-color: rgba(255, 255, 255, 0.342);
-  }
+}
 
-  .owl-item {
-    width : 300px!important;
+.owl-item {
+    width: 300px !important;
     height: 260px;
-  }
+}
 
-  .owl-prev,.owl-next{
-    font-size: 25px!important;
+.owl-prev,
+.owl-next {
+    font-size: 25px !important;
     margin-top: 20px
-    
-  }
-.owl-next{
+}
 
-    margin-left : 20px
-  }
+.owl-next {
+
+    margin-left: 20px
+}
+
+.profil-groupe {
+    width: 55px;
+    aspect-ratio: 1;
+}
+
+.owl-stage-outer{
+    height: 320px;
+}
+
+
+/* Responsive design */
+
+@media (max-width : 1600px) {
+    .p1 {
+        font-size: 27px;
+    }
+
+    .p2 {
+        font-size: 14px;
+    }
+
+    .p3 {
+        font-size: 12px;
+    }
+    h1,.h1{
+        font-size: 25px;
+    }
+
+    .banner h1,
+    .banner h1 * {
+        font-size: 25px;
+        margin-top: 100px;
+    }
+}
+@media (max-width : 5750px) {
+    .profil-groupe {
+        width: 35px;
+    }
+}
